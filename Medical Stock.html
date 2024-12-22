@@ -1,0 +1,142 @@
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create a navbar with same options as card names */
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(64,124,184);
+  padding: 10px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  color: black;
+}
+
+/* Create a card format for each product */
+.card {
+  width: 18%;
+  margin: 1%;
+  border: 1px solid #ccc;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+}
+
+.card img {
+  width: 100%;
+  height: 130px;
+  object-fit: contain;
+}
+
+.card h3 {
+  text-align: center;
+  font-size: 18px;
+}
+
+/* Center the cards in the page */
+.row {
+  max-width: 1200px; /* Limit the width of the row */
+  margin: auto; /* Center the row horizontally */
+  display: flex; /* Make the row a flex container */
+  flex-wrap: wrap; /* Allow the cards to wrap to the next line */
+  align-items: center;
+  justify-content: center;
+}
+</style>
+</head>
+<body>
+
+<!-- Create a navbar with same options as card names -->
+<div class="navbar">
+  <a href="#">Arundhati Products</a>
+  <a href="https://www.apollopharmacy.in/search-medicines/pills">Pills</a>
+  <a href="https://www.apollopharmacy.in/search-medicines/drinks">Drinks</a>
+  <a href="https://www.apollopharmacy.in/search-medicines/Glucometers%20and%20Test%20Strips">Glucometers and Test Strips</a>
+  <a href="https://www.apollopharmacy.in/search-medicines/winter%20essiential">Winter Essentials</a>
+  <a href="#">Chyawanprash</a>
+  <a href="https://www.flipkart.com/baby-care/diaper-potty-training/baby-diapers/pampers~brand/pr?sid=kyh,fdp,yvf">Baby Care</a>
+  <a href="#">Ayurveda</a>
+  <a href="#">Health Devices</a>
+</div>
+
+<!-- Create a row of cards for each category -->
+<div class="row">
+  <!-- Create a card for each product in the category -->
+  <div class="card">
+    <!-- Add an image and a name for the product -->
+    <img src="images/arundhati logo1.png" alt="Arundhati Products">
+    <h3>Arundhati Products</h3>
+  </div>
+  <div class="card">
+    <img src="images/womencare.webp" alt="Women Healthcare">
+    <h3>Women Healthcare</h3>
+  </div>
+  <div class="card">
+    <img src="images/health drinks.jpeg" alt="Health Drinks">
+    <h3>Health Drinks</h3>
+  </div>
+  <div class="card">
+    <img src="images/ayurvedic_range.webp" alt="Ayurveda">
+    <h3>Ayurveda</h3>
+  </div>
+</div>
+
+<div class="row">
+  <div class="card">
+    <img src="images/parac.jpeg" alt="Paracetamol">
+    <h3>Paracetamol</h3>
+  </div>
+  <div class="card">
+    <img src="images/aspirin.jpeg" alt="Aspirin">
+    <h3>Aspirin</h3>
+  </div>
+  <div class="card">
+    <img src="images/ibu.jpeg" alt="Ibuprofen">
+    <h3>Ibuprofen</h3>
+  </div>
+  <div class="card">
+    <img src="images/ant.jpeg" alt="Antacid">
+    <h3>Antacid</h3>
+  </div>
+</div>
+
+<div class="row">
+    <div class="card">
+        <img src="images/chyawanprash.webp" alt="Chyawanprash">
+        <h3>Chyawanprash</h3>
+      </div>
+      <div class="card">
+        <img src="images/winter_essentials.webp" alt="Antihistamine">
+        <h3>Winter Essentials</h3>
+      </div>
+      <div class="card">
+        <!-- Add an image and a name for the product -->
+        <img src="images/babycare.webp" alt="Baby Products">
+        <h3>Baby Products</h3>
+      </div>
+    <div class="card">
+      <img src="images/healthdevices.webp" alt="Health Devices">
+      <h3>Health Devices</h3>
+    </div>
+  </div>
+
+
+<!-- Add more rows and cards for other categories as per your need -->
+
+</body>
+</html>

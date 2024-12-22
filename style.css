@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+#content {
+    margin-left: 500px;
+    padding: 20px;
+}
+.header {
+    width: 99%;
+    height: 100vh;
+    background-image: url(images/loooogo.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.navbar {
+    width: 150px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 30px 15px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    transition: width 0.5s;
+}
+.user {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90px;
+    font-size: 12px;
+    padding: 10px;
+    border-radius: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+.user div {
+    display: none;
+}
+.user h2 {
+    font-size: 15px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+.logo-img {
+    width: 95px;
+    border-radius: 60%;
+    margin: auto;
+    mix-blend-mode: darken;
+}
+ul {
+    list-style: none;
+    padding: 0 15px;
+    align-items: flex-start;
+}
+ul li {
+    margin: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: rgb(9, 3, 3);
+}
+ul li span {
+    width: 30px;
+    margin-right: 0px;
+}
+ul li p {
+    white-space: nowrap;
+    display: none;
+}
+.side-nav:hover {
+    width: 250px;
+}
+.navbar:hover {
+    width: 250px;
+}
+.navbar:hover .user div {
+    display: block;
+}
+.navbar:hover .user {
+    width: 90%;
+    background: white;
+    backdrop-filter: blur(5px);
+}
+.navbar:hover .user {
+    margin: 0;
+}
+.navbar:hover ul li p {
+    display: block;
+}
+.navbar:hover ul li span {
+    margin-left: 10px;
+}

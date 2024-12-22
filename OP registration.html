@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OP Registration</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f8f9fa; /* Light gray background color */
+            /* background-image:url("logooo.jpg"); */
+        }
+
+        .registration-form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 400px;
+            text-align: center;
+            /* background-image:url("logooo.jpg"); */
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-bottom: 8px;
+        }
+
+        input {
+            padding: 8px;
+            margin-bottom: 16px;
+            border: 1px solid #626262;
+            border-radius: 4px;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .card {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            display: none; /* Initially hidden */
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1000;
+            animation: fadeIn 0.5s ease-in-out; /* Fade-in animation */
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+<!-- <img src="logooo.jpg" alt=""> -->
+<div class="registration-form">
+    <h2>OP Registration Form</h2>
+    <form id="registrationForm" onsubmit="submitForm(event)">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required>
+
+        <label for="phoneNumber">Phone Number:</label>
+        <input type="tel" id="phoneNumber" name="phoneNumber" required>
+
+        <label for="bloodGroup">Blood Group:</label>
+        <input type="text" id="bloodGroup" name="bloodGroup" required>
+
+        <label for="appointmentDate">Appointment Date:</label>
+        <input type="date" id="appointmentDate" name="appointmentDate" required>
+
+        <button type="submit">Book OP</button>
+    </form>
+</div>
+
+<div id="confirmationCard" class="card">
+    <h3>Appointment Successful &#11088;</h3>
+    <p>Name: <span id="confirmationName"></span></p>
+    <p>Date: <span id="confirmationDate"></span></p>
+    <p>Serial Number: <span id="confirmationSerialNumber"></span></p>
+    <button id="redirectButton" onclick="redirectToHome()">OK</button>
+</div>
+
+
+<script>
+    function submitForm(event) {
+        event.preventDefault();
+
+        // Extracting form data
+        const name = document.getElementById('name').value;
+        const appointmentDate = document.getElementById('appointmentDate').value;
+
+        // Generating a random serial number for demonstration purposes
+        const serialNumber = Math.floor(Math.random() * 1000) + 1;
+
+        // Display the confirmation card
+        displayConfirmationCard(name, appointmentDate, serialNumber);
+
+        // Blur the background
+        blurBackground();
+    }
+
+    function displayConfirmationCard(name, date, serialNumber) {
+        const confirmationCard = document.getElementById('confirmationCard');
+        const confirmationName = document.getElementById('confirmationName');
+        const confirmationDate = document.getElementById('confirmationDate');
+        const confirmationSerialNumber = document.getElementById('confirmationSerialNumber');
+
+        confirmationName.textContent = name;
+        confirmationDate.textContent = date;
+        confirmationSerialNumber.textContent = serialNumber;
+
+        // Show the confirmation card
+        confirmationCard.style.display = 'block';
+    }
+
+    function blurBackground() {
+        const registrationForm = document.querySelector('.registration-form');
+
+        // Apply blur effect to the background
+        registrationForm.style.filter = 'blur(5px)';
+    }
+    function redirectToHome() {
+        // Redirect the user to "home.html"
+        window.location.href = 'home.html';
+    }
+</script>
+
+
+</body>
+</html>

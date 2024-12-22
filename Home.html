@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website</title>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+
+#content {
+    margin-left: 500px;
+    padding: 20px;
+
+}
+.header{
+ width:99%;
+ height:100vh;
+ background-image: url(images/loooogo.jpg);
+ background-position: center;
+ background-size: cover;
+}
+.navbar{
+    width:150px;
+    height:95%;
+    position:fixed;
+    top:0;
+    left:0;
+    padding:30px 15px;
+    background:rgba(255,255,255,0.2);
+    backdrop-filter:blur(5px);
+    display:flex;
+    justify-content: space-between;
+    flex-direction: column;
+    transition: width 0.5s;
+   
+    
+}
+#h1{
+    content: center;
+}
+.user{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width:90px;
+    font-size :12px;
+    padding:10px;
+    border-radius:8px;
+    margin-left: auto;
+    margin-right: auto;
+    /* overflow:visible; */
+    /* mix-blend-mode:darken; */
+}
+.user div{
+    display:none;
+}
+.user h2{
+    font-size: 15px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+.logo-img{
+    width:95px;
+    border-radius: 60%;
+    margin: auto;
+    mix-blend-mode:darken;
+}
+ul{
+    list-style:none;
+    padding:0 15px;
+    align-items: flex-start;
+}
+
+ul li{
+    margin:30px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    cursor:pointer;
+    color: rgb(9, 3, 3);
+}
+ul li span{
+    width:30px;
+    margin-right:0px;
+   
+}
+ul li p{
+    white-space: nowrap;
+    display:none;
+}
+
+.side-nav:hover{
+    width:250px;
+}
+
+.navbar:hover{
+    width:300px;
+  
+}
+.navbar:hover .user div{
+    display:block;
+}
+.navbar:hover .user{
+    width:90%;
+    height:100px;
+    background: white;
+    backdrop-filter: blur(5px);
+}
+.navbar:hover .user{
+    margin:0;
+}
+.navbar:hover ul li p{
+    display:block;
+}
+.navbar:hover ul li span{
+    margin-left: 10px;;
+}
+.sec1{
+    margin-bottom:50px;
+    text-align: center;
+}
+.content{
+    margin:40px;
+    margin-left:200px;
+    text-align: right;
+    
+
+}
+.sec2{
+    margin-bottom:60px;
+    text-align: center;
+    box-shadow: gold;
+
+}
+
+
+.content1{
+    justify-content: space-between;
+    margin-bottom:70px;
+    text-align: center;
+    color:black;
+    background-color:rgb(64, 134, 184);
+}
+.content2{
+    justify-content: space-between;
+    margin-bottom:70px;
+    text-align: center;
+    color:black;
+    background-color:rgb(64, 134, 184);
+}
+.content3{
+    justify-content: space-between;
+    margin-bottom:70px;
+    text-align: center;
+    color:black;
+    background-color:rgb(64, 134, 184);}
+.content4{
+    justify-content: space-between;
+    margin-bottom:70px;
+    text-align: center;
+    color:black;
+    background-color:rgb(64, 134, 184);
+}
+
+.h2{
+    text-align: center;
+    nav-right: auto;
+}
+.col{
+    margin-left:200px;
+    margin-bottom:70px;
+    float:left;
+    width:40%;
+    padding:30px;
+    background-color:rgb(64, 134, 184);
+}
+.col1{
+    margin-left:70px;
+    margin-bottom:70px;
+    float:left;
+    width:30%;
+    padding:5px;
+    background-color:rgb(64, 134, 184);
+}
+.main{
+    display: flex;
+}
+.first{
+    margin-left:330px;
+    margin-bottom:70px;
+    height:20px;
+    width: 70px;
+    /* background-color:rgb(64, 134, 184); */
+}
+.second{
+    margin-left:330px;
+    margin-bottom:70px;
+    height:70px;
+    width: 70px;
+    /* background-color:rgb(64, 134, 184); */
+   
+}
+.third{
+    margin-left:330px;
+    margin-bottom:70px;
+    margin-left:310px;
+    height:70px;
+    width: 70px;
+    /* background-color:rgb(64, 134, 184); */
+}
+.firstt{
+    margin-left:100px;
+    margin-bottom:70px;
+    margin-left:310px;
+  
+    }
+.card{
+    
+  float: center;
+  width: 20%;
+  margin: 10px;
+  padding: 40px;
+  border: 1px solid black;
+  border-radius: 10px;
+  text-align: center;
+  background-color:rgb(64, 134, 184);
+  width: calc(50% - 20px);
+  margin: 10px;
+}
+.card1{
+    
+    float: center;
+    width: 40%;
+    margin: 10px;
+    padding: 40px;
+    border: 1px solid black;
+    border-radius: 10px;
+    text-align: center;
+    background-color: rgb(64, 134, 184);
+    width: calc(50% - 20px);
+    margin: 10px;
+   margin-left:340px;
+    margin-bottom:70px;}
+.container{
+    margin-left:470px;
+    margin-bottom:70px;
+}
+.sec3{
+    text-align: center;
+    padding-left: 150px;
+}
+.body4{
+    text-align: center;
+}
+.address{
+    margin-left:600px;
+    margin-bottom:80px;
+}
+</style>    
+</head>
+<body>
+
+    
+    <div class="header">
+        <div class="navbar">
+            <div class="user">
+                <img src="images/logofinal.jpg"height="90px" width="100px" class="logo-img">
+           </div>
+           <h2>Heal with us, Feel the trust.
+           </h2>
+    <ul>
+        <li> 
+          
+            <span><ion-icon name="home-outline"></ion-icon></span>
+            <a href="Home.html"><p>Home</p></a><br><br></li>
+          <li><span><ion-icon name="accessibility-outline"></ion-icon></span>
+            <a href="doctors.html"><p>Doctors</p></a><br><br></li>
+           <li> <span><ion-icon name="id-card-outline"></ion-icon></ion-icon></span>
+            <a href="OP registration.html"><p>OP registration</p></a><br><br></li>
+           <li><span><ion-icon name="bandage-outline"></ion-icon></span>
+            <a href="Medical Stock.html"><p>Medical Stock</p></a><br>
+            </b></li>
+            <li><span><ion-icon name="podium-outline"></ion-icon></span>
+                <a href="#"><p>About</p></a><br>
+                </b></li>
+           
+           
+            </li> </div>
+        </div> 
+    </ul>
+<hr></body>
+<body1>
+<div class="sec1"></div><br>
+<div class="content">
+    <div class="col1">
+        <img src="images/marri-rajashekhar-reddy-profile-main.png" width="400px">
+    </div>
+    <p><h2><b>"I have seen families and dreams falling <br>
+        apart due to unaffordable healthcare<br> which had bothered me since long.<br>
+         With an unflinching <br>zeal to provide free services,<br>
+          I made a promise to my mother to set up a <br>
+          hospital where every family can<br> gain access to quality healthcare<br>
+           across generations with<br> affordability no more a barrier.”<br><br>
+        MARRI RAJASEKAR REDDY<br>
+        Founder</b><br><br></h2>
+        
+    <button>Our Mission<p><h3><div class="var">
+        I truly realize the importance of affordable healthcare considering the burden a costly healthcare can impose on families. With my earnest zeal to assist families in getting rid of this burden, I dreamt of establishing an institution which will not only cater to the need of thousands families by offering them affordable healthcare but will also create a long lasting legacy. I promised to my mother of coming up with a hospital that will stand apart in assisting families to get healthcare of excellent standard without imposing heavy financial burden on them.
+
+Arundhati Institution of Medical Science (AIMS) is the first outcome of my bigger dream.
+
+Here we have assembled a team of highly skilled and compassionate healthcare who too share the noble dream of providing quality healthcare in affordable cost. They, with all their passion and dedication, are striving relentlessly to ensure a truly nurturing environment with sincere touch of personalized healthcare to help the patients in all possible manner.
+
+It's the promise that I made to my mother, that drives me to resolutely work for turning the hospital into an effective tool for ultimately transforming the lives of people who otherwise are reeling under the burden of unaffordable healthcare.</div>
+</h3> </p></button></body1></div><hr>
+  </div>
+  
+    <body2>
+        <div class="sec3">
+        <h1><u><b>We are covid free</b></u></h1></div>
+        <div class="container"> <!-- added a container div -->
+            <div class="card">
+                <span><ion-icon name="hand-right-outline"></ion-icon></span>
+                <a href="#"></a><br>
+                </b>
+              <h3>Extra Sanitization methods</h3>
+
+              <p>Disinfecting all areas and frequently touched</p>
+              <p>surface continously.</p>
+              
+              <div style="text-align: center;">
+                
+              </div>
+              
+            </div>
+            <div class="card">
+                <span><ion-icon name="people-outline"></ion-icon></span>
+                <a href="#"></a><br>
+              <h3>Social Distancing</h3>
+              <p>Following social distancing protocols</p>
+              <p>implementing limited visination,</p>
+              <p>keep yourself and others safe.</p>
+              <div style="text-align: center;">
+               
+              </div>
+              
+            </div>
+            <div class="card">
+                <span><ion-icon name="warning-outline"></ion-icon></span>
+                <a href="#"></a><br>
+              <h3>Face Mask</h3>
+              <p>Mandating all patients<br>
+            and staff to wear mask.</p>
+              
+              <div style="text-align: center;">
+              </div></div></div></body2><hr>
+    <body3>
+  <div class="sec2">
+    <h1><u><b>Centres of excellence</b></u></h1>
+    <div class="row">
+        <div class="col">
+            <img src="images/heart.jpg" style="width:100%">
+        </div>
+    <div class="content1">
+        <br><h2><u>Cardiology</u></h2><p><h3>The Arundathi Hospitals Institutes are regarded <br>as one of the best heart hospitals in India,<br>
+             performing a multitude of treatments and procedures<br> in cardiology and cardiothoracic surgery.<br>
+             The scorecard shows an unmatched record of <br>over 1,52,000 cardiac and cardiothoracic surgeries.<br>
+            We have vast experience in the most<br> complicated coronary artery bypass surgery,<br>
+             surgery for all types of valvular heart diseases,<br> paediatric heart surgery, adult and paediatric<br> 
+             heart transplantation with success<br> rates comparable to international standards.<br></h3></p></div><br>
+        
+            <div class="col">
+                <img src="images/otho.jpg" style="width:100%">
+            </div>
+                <div class="content2" style="text-align: center;">
+                <br><h2><u>Orthopedics</u></h2><p><h3>The  Arundathi Hospitals of Orthopaedics is regarded as one of the best & top orthopaedics hospitals
+                     in India with a legacy of innovation and excellence. The Institutes are at the forefront
+                      in offering the latest in Orthopedic treatments and Orthopedic surgical advancements in India on par with the
+                       best centres in the world.<br> Arundathi Hospitals offers key & best orthopedic surgeries and procedures in India.<br>
+                       We perform bone and joint replacement surgeries which include the most current Arthroscopic and Reconstructive techniques.<br></h3></p></div>
+                       <div class="col">
+                        <img src="images/Robots-to-Improve-Surgery-for-All.jpg" style="width:100%">
+                    </div>
+                     <div class="content3">
+                        <br><h2><u>Robotic Surgery</u></h2><p><h3>
+                    Robotic Surgery is a branch of medical science
+                         that uses a robotic arm controlled with a computer by a surgeon.
+                         Small tools attached to the robotic arm are then used to 
+                         perform the surgery by copying the hand movements of the
+                        surgeon as he controls the robotic arm. With this method
+                         being more convenient for the surgeon due to a perfect
+                          view of the area under surgery,<br>
+                          Arundathi Hospitals. Robotic Surgery Department is equipped with a skilled team
+                         of the best Surgeons.  Arundathi Hospitals is your one-stop 
+                         destination to book the finest Robot-assisted Surgeons in your town.<br></h3></p></div>
+                         <div class="col">
+                            <img src="images/urology-about.jpg" style="width:100%">
+                        </div>
+                            <div class="content1">
+                            <br><h2><u>Urorology</u></h2><p><h3>Urology deals with diagnosis and treatment
+                                 of diseases predominantly of male reproductive organs and the urinary
+                                  tract of males and females. <br>
+                                  Arundathi Hospitals. have state-of-the-art
+                                   Urology facilities including minimally invasive surgeries, robotics and
+                                    laparoscopy techniques, fiber-optic endoscopy, and lithotripsy units.<br>
+                                     An urologist deals with diseases such as Incontinence, prostate enlargement,<br>
+                                     kidney stones, prostate cancer, penile fractures, urinary infections,
+                                      and STDs, just to name a few.So don’t hesitate and walk right into  Arundathi Hospitals.<br>
+                                     <br></h3></p></div>
+                                     <div class="col">
+                                        <img src="images/17_Neurology.jpg" style="width:100%">
+                                    </div>
+                                        <div class="content1">
+                                        <br><h2><u>Neurology</u></h2><p><h3>Neurology is a centre of excellence at  Arundathi Hospitals.<br>
+                                             and deals with diagnosis and treatment of disorders 
+                                             of the nervous system. The  Arundathi Hospitals. Neuro departments
+                                              are equipped with the best team and state of the art facilities
+                                              like Neuro radiology, sleep lab, Intensive care units etc.<br>
+                                               Our Neuro team takes care of more than 300 variety
+                                                of problems like aneurisms, dementia, Alzheimer’s, epilepsy, cerebro vascular diseases,
+                                                 headache, multiple sclerosis, stroke, Neuro oncology, neur The Apoophysiology, sleep neurology.<br>
+                                                 The Arundathi stroke program is a protocol based approach and is
+                                                  benchmarked with the best institutions in the world. <br></h3></p></div>
+                                                  <div class="col">
+                                                    <img src="images/gastroenterology-1.jpg" style="width:100%">
+                                                </div>
+                                                    <div class="content2">
+                                                    <br><h2><u>Gastroentreology</u></h2><p><h3>
+                                                        Gastroenterology deals with the diagnosis and treatment 
+                                                        of complications of the gastrointestinal tract, i.e.
+                                                        the stomach and small intestine. A gastroenterologist deals
+                                                         with patients suffering from gastroenteritis, showing symptoms of
+                                                          vomiting, diarrhea, abdominal pain and cramping. With Apollo Hospitals’
+                                                          qualified bench strength of Gastroenterologists who are the best in their field,<br>
+                                                           finest treatment is just around the corner. <br>
+                                                           Experience a smoother medical experience for booking an appointment
+                                                            or finding the best gastroenterologists for<br>
+                                                             world-class for your gastro-related
+                                                             problems at Arundathi Hospitals.
+                                                             <br></h3></p></div>  </div></div></body3>
+                                                             <body4>
+                                                             <div class="col">
+                                                                <img src="images/Pulmonary-embolismm.jpg" style="width:100%">
+                                                            </div>
+                                                                <div class="content4">
+                                                                <br><h2><u>Pulmonary</u></h2><p><h3>
+                                                                    Pulmonary Medicine at Apollo Hospitals provides
+                                                                     expertise in a broad range of diseases including
+                                                                     asthma, COPD, critical care, cystic fibrosis, interstitial lung disease,
+                                                                      lung cancer, neuromuscular disease, pulmonary hypertension, sarcoidosis,
+                                                                       and sleep medicine. The smoke cessation clinics, COPD clinics
+                                                                        are specialized clinics which offer tailor made
+                                                                        programs and run by a team of Pulmonologist and paramedical teams.<br>
+                                                                         Our smoke cessation programs are the best in the country
+                                                                          with huge success rate and are implemented by many
+                                                                          corporate companies for their employees.
+                                                                           Apollo Hospitals is your one-stop destination to book the finest Pulmonologist in your town.
+                                                                        </h3></p></div></body3><hr>
+                                                             <body4>
+                                                               
+                                                                <div class="card1">
+                                                                    <h1><u><b>News about us</b></u>
+                                                                    </h1>
+                                                                    <br>
+            <img src="images/newspaper1.jpg" width="400px" height="300px"><br><div class="col1"></div>
+            <img src="images/hq720.jpg" width="500px" height="300px" >
+            
+              
+              <div style="text-align: center;"></div>
+                                                                </div>
+                                                                         <div class="address">
+                                                        
+                                                                         <span><ion-icon name="call-outline"></ion-icon></ion-icon></span>
+                                                                            <a href="#"><p>Contact:+91 805 566 7888</p></a><br>
+                                                                             <span><ion-icon name="car-outline"></ion-icon></ion-icon></span>
+                                                                                <a href="#"><p>Ambulance:+91 939 191 2216</p></a><br>
+                                                                            <p><h2><b>Beside Mlrit,Dundigal,<br>
+                                                                                Gandi Maisamma,Medchal-Malkajgiri <br>Dist.Telangana</b></h2></p></div>
+                                                                         <div class="main">
+                                                                            <div class="first">
+                                                                                <a href="https://twitter.com/Aims_MedCollege">
+                                                                                    <span>
+                                                                                        <ion-icon name="logo-twitter" style="font-size: 30px; padding-left: 150px; color: black;"></ion-icon>
+                                                                                    </span>
+                                                                                </a>
+                                                                            </div>
+                                                                            
+                                                                        <div class="second"> <a href="https://www.facebook.com/people/Aims-MedCollege/100092051179931/e"><span><ion-icon name="logo-facebook" style="font-size: 30px; padding-left: 50px;color: black;"></ion-icon></ion-icon></span></a>
+                                                                    
+                                                                    </div> 
+                                                        
+                                                                        <div class="third">
+                                                                           <a href="https://www.instagram.com/arundathihospital/"><span><ion-icon name="logo-instagram" style="font-size: 30px;color: black; "></ion-icon></ion-icon></span></a>
+                                                                        
+                                                                        </div> 
+                                                                       
+                                                                </div></div>
+                                                              </body4><hr>
+  </div>         
+  </div>
+
+
+
+</div>
+</html>

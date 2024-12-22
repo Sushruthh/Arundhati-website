@@ -1,0 +1,155 @@
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.card {
+  float: left;
+  width: 20%;
+  margin: 10px;
+  padding: 40px;
+  border: 1px solid black;
+  border-radius: 10px;
+  text-align: center;
+  background-color: aliceblue;
+  width: calc(50% - 20px); /* Adjust width to fit 2 cards per line */
+  margin: 10px;
+}
+
+.icon {
+  width: 32px;
+  height: 32px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.header {
+  height: 100px;
+  background-color:rgb(202, 227, 237);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+.logo {
+  width: 80px;
+  height: 80px;
+}
+
+.container {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+body {
+  background-image: url("hospital.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.button {
+  background-color: #79e879; /* Light green */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #04AA6D; /* Darker green */
+}
+
+
+</style>
+</head>
+<body>
+<div class="header">
+  <img src="images/arundhati logo1.png" alt="Logo" class="logo">
+  <span class="title">Arundhati Hospital</span>
+</div>
+<div class="container"> <!-- added a container div -->
+<div class="card">
+  <img src="images/doctor1.jpeg" alt="Doctor" class="icon">
+  <h3>Dr. Ravi Kumar</h3>
+  <p>Specialization: Cardiology</p>
+  <p>Experience: 10 years</p>
+  <p>Timings: 9 AM to 5 PM</p>
+  <div style="text-align: center;">
+    <a href="OP registration.html" class="button">Book Appointment</a>
+  </div>
+  
+</div>
+<div class="card">
+  <img src="images/doctor3.jpeg" alt="Doctor" class="icon">
+  <h3>Dr. Priya Sharma</h3>
+  <p>Specialization: Dermatology</p>
+  <p>Experience: 8 years</p>
+  <p>Timings: 10 AM to 6 PM</p>
+  <div style="text-align: center;">
+    <a href="OP registration.html" class="button">Book Appointment</a>
+  </div>
+  
+</div>
+<div class="card">
+  <img src="images/doctor2.jpeg" alt="Doctor" class="icon">
+  <h3>Dr. Rajesh Singh</h3>
+  <p>Specialization: Neurology</p>
+  <p>Experience: 12 years</p>
+  <p>Timings: 11 AM to 7 PM</p>
+  <div style="text-align: center;">
+    <a href="OP registration.html" class="button">Book Appointment</a>
+  </div>
+  
+</div>
+<div class="card">
+  <img src="images/doctor5.jpeg" alt="Doctor" class="icon">
+  <h3>Dr. Anita Gupta</h3>
+  <p>Specialization: Gynecology</p>
+  <p>Experience: 9 years</p>
+  <p>Timings: 8 AM to 4 PM</p>
+  <div style="text-align: center;">
+    <a href="OP registration.html" class="button">Book Appointment</a>
+  </div>
+  
+</div>
+<div class="card">
+  <img src="images/doctor4.jpeg" alt="Doctor" class="icon">
+  <h3>Dr. Manoj Reddy</h3>
+  <p>Specialization: Orthopedics</p>
+  <p>Experience: 7 years</p>
+  <p>Timings: 12 PM to 8 PM</p>
+  <div style="text-align: center;">
+    <button class="button">Book Appointment</button>
+  </div>
+  
+</div>
+<div class="card">
+  <img src="images/doctor6.jpeg" alt="Doctor" class="icon">
+  <h3>Dr. Nisha Patel</h3>
+  <p>Specialization: Pediatrics</p>
+  <p>Experience: 6 years</p>
+  <p>Timings: 9 AM to 5 PM</p>
+  <div style="text-align: center;">
+    <button class="button">Book Appointment</button>
+  </div>
+  
+</div>
+</div> <!-- closed the container div -->
+</body>
+</html>
