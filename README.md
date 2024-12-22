@@ -15,6 +15,6 @@ The Arundhati Hospital website is designed to provide information about the hosp
 - **Doctor Selection** : Patients can choose from a pool of 5+ doctors for their appointment  
 
 # Technologies Used
-**HTML** : For the structure of the web pages  
-**CSS** : For styling the website, including responsive design and animations  
-**JavaScript** : For interactive elements, such as form submission and confirmation display
+- **HTML** : For the structure of the web pages  
+- **CSS** : For styling the website, including responsive design and animations  
+- **JavaScript** : For interactive elements, such as form submission and confirmation display
